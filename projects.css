@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV BAR ---------------------------------------------- */ 
+
+li, a, button, label, .info{
+    color: whitesmoke;
+    font-weight: 1500;
+    text-decoration: none;
+    font-family: 'Bahnschrift', sans-serif;
+    z-index: 3;
+    
+    font-size: 2.4vh;
+}
+
+header{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8.5%;
+    background-color: #0C0C0C;
+    color: #0C0C0C;
+    z-index: 4;
+}
+
+.logo{
+    max-height: 5vh;
+    cursor: pointer;
+    order: 4;
+    margin-left: auto;
+}
+
+.logo2{
+    max-height: 5vh;
+    cursor: pointer;
+    order: 5;
+    margin-left: 5vh;
+}
+
+nav{
+    order: 1;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li:nth-child(1){
+    padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: rgb(236, 64, 122);
+}
+
+.cta {
+    order: 2;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(98, 0, 234);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(236, 64, 122);
+}
+
+/* s */
+/* NAV BAR -------------------------------------- */
+
+input {
+  display: none;
+}
+
+.con {
+  order: 2;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgb(98, 0, 234);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: background-color 0.1s, color 0.1s;
+  z-index: 3;
+}
+
+.con:hover {
+  background-color: rgb(236, 64, 122);
+}
+
+.info {
+  order: 3;
+  -webkit-transition: width .3s ease;
+  width: 0;
+  overflow: hidden;
+  width: 0vw;
+  background-color: rgb(98, 0, 234);
+  border: none;
+  border-radius: 50px;
+  margin-left: -2vw;
+  min-height: 3.6vh;
+  max-height: 3.6vh;
+  text-align: center;
+  padding-top: 1vh;
+  z-index: 2;
+}
+
+input:checked + .info {
+  width: 38vw;
+  overflow: hidden;
+}

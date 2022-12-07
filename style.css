@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* INTRODUCTION ANIM */
+
+@keyframes slide {
+    from {transform: translateX(-130vw);}
+    to {transform: translateX(0vw);}
+}
+
+@keyframes fadein {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes slide2 {
+    from {width: 100%;}
+    to {width: 0%;}
+}
+
+/* Tiles Anim */
+
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+}
+
+:root {
+  --g1: rgb(98, 0, 234);
+  --g2: rgb(236, 64, 122);
+}
+
+body {
+  animation: background-pan 10s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--g1),
+    var(--g2),
+    var(--g1)
+  );
+  background-size: 200%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0px;
+}
+
+/* toggles ----------------------------------  */
+
+body.toggled {
+  animation: none;
+}
+
+body.toggled > #introductioncontainer {
+    opacity: 0;
+}
+
+body.toggled > #about{
+  opacity: 0;
+}
+
+
+body.toggled > #tiles > .tile:hover {
+  opacity: 0.1 !important;
+}
+
+
+/* TILES ----------------------------------   */
+
+#tiles {
+  height: calc(100vh - 1px);
+  width: calc(100vw - 1px);
+  position: relative;
+  z-index: 2;
+  
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+}
+
+.tile {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.tile:hover:before {
+  background-color: rgb(30, 30, 30);
+  z-index: 1;
+}
+
+.tile:before {
+  background-color: rgb(15, 15, 15);
+  content: "";
+  inset: 0.5px;
+  position: absolute;
+  z-index: 1;
+}
+
+
+/* INTRODUCTION ---------------------------- */
+
+.introductiontitle {
+  background-color:#0C0C0C; 
+  width: 35vw; 
+  height: 12vh; 
+  display: table;
+  transform: translateX(0vw);
+  z-index: 2;
+    
+  animation-duration: 1s;
+}
+
+.introductioncontainer{
+  position:absolute;
+  left: 6vw;
+  top:18vh;
+  margin-right: 1vh;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.textcover {
+  background-color: #0c0c0c; 
+  width: 100%; 
+  position: absolute; 
+  right: 0%; 
+  border-radius: 5px;
+  animation-name: slide2; 
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+#about{
+  transition: opacity 250ms ease;
+  z-index: 2;
+}
+
+.about-text{
+  position: absolute;
+  background-color:#0C0C0C; 
+
+  z-index: 3;
+
+  top:38vh;
+  width: 52vw; 
+  height: 50vh; 
+  left: 6vw;
+  opacity: 1;
+
+  display: table;
+  transform: translateX(0vw);
+}
+
+.about-text p{
+  z-index: 3;  
+
+  margin-top: 5vh; 
+  padding: 1vw; 
+  padding-left: 1vw;
+
+  font-size: 2.8vh;
+  font-family: 'Bahnschrift';
+  color: white;
+  text-align:start;
+  display: table-cell;
+}
+
+
+/* NAV BAR ---------------------------------------------- */ 
+
+li, a, button, label, .info{
+    color: whitesmoke;
+    font-weight: 1500;
+    text-decoration: none;
+    font-family: 'Bahnschrift', sans-serif;
+    z-index: 3;
+    
+    font-size: 2.4vh;
+}
+
+header{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8.5%;
+    background-color: #0C0C0C;
+    color: #0C0C0C;
+    z-index: 4;
+}
+
+.logo{
+    max-height: 5vh;
+    cursor: pointer;
+    order: 4;
+    margin-left: auto;
+}
+
+.logo2{
+    max-height: 5vh;
+    cursor: pointer;
+    order: 5;
+    margin-left: 5vh;
+}
+
+nav{
+    order: 1;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li:nth-child(1){
+    padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: rgb(236, 64, 122);
+}
+
+.cta {
+    order: 2;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(98, 0, 234);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(236, 64, 122);
+}
+
+
+/* NAV BAR -------------------------------------- */
+
+input {
+  display: none;
+}
+
+.con {
+  order: 2;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgb(98, 0, 234);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: background-color 0.1s, color 0.1s;
+  z-index: 3;
+}
+
+.con:hover {
+  background-color: rgb(236, 64, 122);
+}
+
+.info {
+  order: 3;
+  -webkit-transition: width .3s ease;
+  width: 0;
+  overflow: hidden;
+  width: 0vw;
+  background-color: rgb(98, 0, 234);
+  border: none;
+  border-radius: 50px;
+  margin-left: -2vw;
+  min-height: 3.6vh;
+  max-height: 3.6vh;
+  text-align: center;
+  padding-top: 1vh;
+  z-index: 2;
+}
+
+input:checked + .info {
+  width: 38vw;
+  overflow: hidden;
+}
+
+
+

@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV BAR ---------------------------------------------- */ 
+
+li, a, button, label, .info{
+    color: whitesmoke;
+    font-weight: 1500;
+    text-decoration: none;
+    font-family: 'Bahnschrift', sans-serif;
+    z-index: 3;
+    
+    font-size: 2.4vh;
+}
+
+header{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8.5%;
+    background-color: #0C0C0C;
+    color: #0C0C0C;
+    z-index: 4;
+}
+
+.logo{
+    max-height: 5vh;
+    cursor: pointer;
+    order: 4;
+    margin-left: auto;
+}
+
+.logo2{
+    max-height: 5vh;
+    cursor: pointer;
+    order: 5;
+    margin-left: 5vh;
+}
+
+nav{
+    order: 1;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li:nth-child(1){
+    padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: rgb(236, 64, 122);
+}
+
+.cta {
+    order: 2;
+}
+
+button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(98, 0, 234);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgb(236, 64, 122);
+}
+
+input {
+  display: none;
+}
+
+.con {
+  order: 2;
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgb(98, 0, 234);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: background-color 0.1s, color 0.1s;
+  z-index: 3;
+}
+
+.con:hover {
+  background-color: rgb(236, 64, 122);
+}
+
+.info {
+  order: 3;
+  -webkit-transition: width .3s ease;
+  width: 0;
+  overflow: hidden;
+  width: 0vw;
+  background-color: rgb(98, 0, 234);
+  border: none;
+  border-radius: 50px;
+  margin-left: -2vw;
+  min-height: 3.6vh;
+  max-height: 3.6vh;
+  text-align: center;
+  padding-top: 1vh;
+  z-index: 2;
+}
+
+input:checked + .info {
+  width: 38vw;
+  overflow: hidden;
+}
+
+
+/* NAV BAR -------------------------------------- */
+
+body{
+    background-color: #0e0e0e;
+}
+
+.timeline-area{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 55vw;
+    border-left: 2px solid #0C0C0C;
+    padding: 0 20px 0 30px;
+}
+.timeline-cell{
+    background-color: #0C0C0C;
+    padding: 2vh 2vw;
+    font-size: 16px;
+    border: 1px solid #0C0C0C;
+    line-height: 1.7;
+    position: relative;
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+.timeline-cell::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:  whitesmoke;
+    border: 3px solid #1e1e1e;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+
+.timeline-cell::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #0C0C0C transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    left: -17px;
+    top: 10px;
+}
+
+.timeline-cell h2{
+    margin: 0;
+    color: white;
+    font-family: 'Bahnschrift', sans-serif;
+}
+.timeline-cell h3{
+    margin-top: -60px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+.timeline-cell h4{
+    margin: 0;
+    margin-top: -30px;
+    margin-left: 43vw;
+    color: white;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.timeline-cell p{
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Bahnschrift', sans-serif;
+}
