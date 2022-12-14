@@ -5,7 +5,7 @@
 </head>
 <body>
 
-
+<script src="/workExperience.js"></script>
 
 <!-- NAV BAR -->
 
@@ -19,15 +19,14 @@
             <li><a href="workExperience.html">Work experience</a></li>
         </ul>
     </nav>
-    <label for="check" class="con">Contact</label>
-    <input id="check" type="checkbox">
-    <div class="info"><p>Email: omajesse.vaarala@gmail.com phone: +358 44 3207320</p></div>
+    <a class="cta" href="contact.html"><button>Contact</button></a>
 </header>
 
 <!-- WORK EXPERIENCE SECTION  -->
 
 <section class="timeline-area">
-    <div class="timeline-cell" style="height: 45px;">
+    
+    <div class="timeline-cell" style="height: 45px;" onclick="toggleElement(document.querySelector('#lrrs'))">
         <h2>Kesätyö: Potkulautojen kerääjä</h2>
         <h3 style="color:yellow;">Länsi-Rajan Rakennussaneeraus</h3>
         <h4>1.11.2021 - 30.1.2022</h4>
@@ -62,6 +61,17 @@
         <p>Varastolla työskennellessä hinnoittelin, höyrytin,
             viikkasin, hyllytin ja kuljetin myyntiin meneviä
             vaateita.</p>
+    </div>
+</section>
+
+<!-- DETAILS -->
+
+<!-- Class = detail box, Unique element ID's -->
+
+<section id="details">
+    <div id="lrrs" class="details-text">
+        <p style="font-size: 4vh;font-family: 'Bahnschrift'; color: white; display: table-cell;">LRRS: Länsi-Rajan Rakennussaneeraus</p>
+        <p>test test test test test test test test test</p>
     </div>
 </section>
 
