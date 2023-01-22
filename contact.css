@@ -11,66 +11,66 @@
 }
 
 :root {
---g1: rgb(98, 0, 234);
---g2: rgb(236, 64, 122);
+  --g1: rgb(98, 0, 234);
+  --g2: rgb(236, 64, 122);
 }
 
 body {
-animation: background-pan 10s linear infinite;
-background: linear-gradient(
-  to right,
-  var(--g1),
-  var(--g2),
-  var(--g1)
-);
-background-size: 200%;
-height: 100vh;
-overflow: hidden;
-margin: 0px;
+  animation: background-pan 10s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--g1),
+    var(--g2),
+    var(--g1)
+  );
+  background-size: 200%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0px;
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Bahnschrift', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bahnschrift', sans-serif;
 }
 
 /* NAV BAR ---------------------------------------------- */ 
 
 li, a, button, label, .info{
-    color: whitesmoke;
-    font-weight: 1500;
-    text-decoration: none;
-    font-family: 'Bahnschrift', sans-serif;
-    z-index: 3;
+  color: whitesmoke;
+  font-weight: 1500;
+  text-decoration: none;
+  font-family: 'Bahnschrift', sans-serif;
+  z-index: 3;
     
-    font-size: 2.4vh;
+  font-size: 2.4vh;
 }
 
 header{
-    margin-top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30 8.5%;
-    background-color: #0C0C0C;
-    color: #0C0C0C;
-    z-index: 4;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30 8.5%;
+  background-color: #0C0C0C;
+  color: #0C0C0C;
+  z-index: 4;
 }
 
 .logo{
-    max-height: 5vh;
-    cursor: pointer;
-    order: 4;
-    margin-left: auto;
+  max-height: 5vh;
+  cursor: pointer;
+  order: 4;
+  margin-left: auto;
 }
 
 .logo2{
-    max-height: 5vh;
-    cursor: pointer;
-    order: 5;
-    margin-left: 5vh;
+  max-height: 5vh;
+  cursor: pointer;
+  order: 5;
+  margin-left: 5vh;
 }
 
 nav{
@@ -205,6 +205,7 @@ form input, form textarea{
   outline: none;
   background: #202020;
   font-size: 16px;
+  resize: none;
 
 }
 

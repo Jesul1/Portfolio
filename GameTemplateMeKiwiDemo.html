@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title> Jesse Vaarala | MeKiwi </title>
+    <link rel ="Stylesheet" href="GameTemplate.css">
+</head>
+<body>
+
+<!-- NAV BAR -->
+
+<header>
+    <a class="logo" href="https://github.com/Jesul1"><img class="logo" src="images/github.png" alt=""></a>
+    <a class="logo2" href="https://jesuli.itch.io/"><img class="logo2" src="images/itch.png" alt=""></a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="index.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="workExperience.html">Work experience</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html"><button>Contact</button></a>
+</header>
+
+<!-- GameTemplate Seleste  -->
+<div class="infoContainer" style="z-index: 1;">
+    <div class="divaider" style="width: 5px; height: 500vh; z-index: 3; right: 0px;"></div>
+    <h1>MeKiwi Demo</h1>
+    <div class="divaider"></div>
+    <p style="font-size: 22px;"> this game was made when i was a trainee at MeKiwi, witch is finland's biggest vr game developer. The goal of the project was to find new fun mechanics to 
+        impliment and work on for future games. I originally started working on the game alone but i was later joined by 2 of my classmates. <br><br> I have made an entire time-line for everything i did for this project
+        but some of the things i made include, guns, hand physics, climbing physics, sliceing objects, slowing down time and way more fun stuff.. <br><br>
+        this demo definetly turned into a passion prjoect for me and i started working on it on my free time and doing up to 16h work days. i found a lot of the mechanics to be so cool that i really wanted to see them become a reality. <br><br>
+        Two of the high lights in this projcet definetly where the slicing system witch is something i have never seen in a VR game and the physics based player movement and climbing witch required me to make a completly new way to handle player movement. 
+        i have written a document about it here. 
+    
+        From this project i learned a lot about VR development and what is and isn't suitable for a vr game. 
+        i also learned a lot about source control and team work. 
+          
+    </p>
+</div>
+
+
+<div class="footer">
+    <div class="divaider" style="z-index: 0; right: 0px; width: 100vw;"></div>
+    <p class="tools">
+        Tools used:<br>
+        - Unity 2019 <br>
+        - Visual Studio 2019<br>
+    </p>
+    <p class="tools" style="padding-right: 600px; padding-top: 45px;">
+        -PhotoShop<br>
+        -git extentions
+    </p>
+    <p class="tools" style="padding-right: 400px; padding-top: 45px;">
+        -Blender<br>
+    </p>
+</div>
+
+
+<div class="imageContainer">
+    <div class="slider-wiper">
+        <div class="slider">
+            <img id="slide-1" src="images/MeKiwiDemo/ezgif-2-d70a0733a5.gif"/>
+            <img id="slide-2" src="images/MeKiwiDemo/ezgif-2-f4fddcbed8.gif"/>
+            <img id="slide-3" src="images/MeKiwiDemo/ezgif-2-b420d9fdb5.gif"/>
+        </div>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+</script>
+
+</body>
+</html>

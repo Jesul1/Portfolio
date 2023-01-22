@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title> Jesse Vaarala | VRSurvGame </title>
+    <link rel ="Stylesheet" href="GameTemplate.css">
+</head>
+<body>
+
+<!-- NAV BAR -->
+
+<header>
+    <a class="logo" href="https://github.com/Jesul1"><img class="logo" src="images/github.png" alt=""></a>
+    <a class="logo2" href="https://jesuli.itch.io/"><img class="logo2" src="images/itch.png" alt=""></a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="index.html">About me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="workExperience.html">Work experience</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html"><button>Contact</button></a>
+</header>
+
+<!-- GameTemplate VRSurvGame  -->
+<div class="infoContainer" style="z-index: 1;">
+    <div class="divaider" style="width: 5px; height: 500vh; z-index: 3; right: 0px;"></div>
+    <h1>VR survival game</h1>
+    <div class="divaider"></div>
+    <p style="font-size: 22px;">After makeing the sandbox mobile game with Joni we set our sights on making a VR game. We tried to come up with ideas on what to do in vr and what we hadn't seen before.<br><br> we came up with a procedurally generated survival game where everything would be done by hand
+        the plan was to avoid adding any kind of ui to the game so it would feel really imersive without any "gamey" elements, like building would be handeled by nailing planks, smelting by actually placeing items in ovens and crafting by attaching items in anyway you pleased.<br><br>
+        however this being our 2nd 3D game ever and our first VR game ever with procedural generation, witch is something we hadn't done ever before, it was a bit too much for us to handle, but we learned a lot making it.<br><br> i personally learned alot about procedural generation, shaders in unity, VR development
+        and not to set the scope of a game so large for a small team. it's a shame we didn't have time to finish it. i'd really like to revisit the idea some day.
+          
+    </p>
+</div>
+
+
+<div class="footer">
+    <div class="divaider" style="z-index: 0; right: 0px; width: 100vw;"></div>
+    <p class="tools">
+        Tools used:<br>
+        - Unity 2019 <br>
+        - Visual Studio 2019<br>
+    </p>
+    <p class="tools" style="padding-right: 600px; padding-top: 45px;">
+        -PhotoShop<br>
+        -git extentions
+    </p>
+
+    <p class="links">links:</p>
+    <a class="github" href="https://github.com/Tonttu81/VRSurvGame">github link</a>
+</div>
+
+<div class="imageContainer">
+    <div class="slider-wiper">
+        <div class="slider">
+            <img id="slide-1" src="images/SurvivalGame/5_1 (1).gif"/>
+        </div>
+        <div class="slider-nav">
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $(this).scrollTop(0);
+});
+</script>
+
+</body>
+</html>
