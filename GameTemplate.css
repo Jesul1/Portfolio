@@ -37,6 +37,10 @@ body {
   font-family: 'Bahnschrift', sans-serif;
 }
 
+html{
+  scroll-padding-top: 250px;
+}
+
 /* NAV BAR ---------------------------------------------- */ 
 
 li, a, button, label, .info{

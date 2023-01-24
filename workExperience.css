@@ -153,12 +153,7 @@ body{
     margin-bottom: 20px;
     -webkit-transition: all 0.3s ease-in-out;
 }
-.timeline-cell:hover{
-    border-radius: 1px;
-    border-color: whitesmoke;
-    cursor: pointer;
-    -webkit-transition: all 0.1 ease-in;
-}
+
 .timeline-cell::before{
     content: '';
     display: block;
